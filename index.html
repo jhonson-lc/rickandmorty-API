@@ -8,6 +8,22 @@
   </head>
   <body>
     <main>
+      <h1 class="mt-5 font-black text-center text-[5rem] w-full">API Rick and Morty</h1>
+      <div id="btns" class="flex w-full block justify-center px-4 mt-10"></div>
+      <template id="template__btn">
+        <button
+          id="btn__prev"
+          class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l"
+        >
+          Prev
+        </button>
+        <button
+          id="btn__next"
+          class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r"
+        >
+          Next
+        </button>
+      </template>
       <div
         class="flex items-center justify-center space-x-2 animate-bounce mt-6 hidden"
         id="loading"
@@ -24,10 +40,10 @@
       </section>
 
       <template id="template__card">
-        <div class="w-full bg-gray-600 h-48 rounded-lg shadow-lg overflow-hidden flex">
+        <div class="w-full bg-gray-600 rounded-lg shadow-lg overflow-hidden flex">
           <div>
             <img
-              class="object-cover w-36 h-full card__img"
+              class="object-cover w-56 h-full card__img"
               src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
               alt="photo"
             />
